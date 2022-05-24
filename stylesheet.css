@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(27, 66%, 92%);
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin: 2rem auto;
+}
+
+#balDollars {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 0;
+}
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 20px;
+    padding: 1rem;
+    color: white;
+}
+
+#bottom {
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: 15px;
+    padding: .7rem;
+}
+
+#spending p {
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    color: hsl(25, 47%, 15%);
+}
+
+#graph {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    border-bottom: solid 1px lightgray;
+    padding-top: 3rem;
+}
+
+.dayDiv {
+    width: 12%;
+    text-align: center;
+}
+
+
+#graph p {
+   font-size: 12px;
+}
+
+.bar {
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+}
+
+.bar:hover {
+    background-color: hsl(10, 79%, 85%);
+}
+
+.wed {
+    background-color: hsl(186, 34%, 60%);
+}
+
+.wed:hover {
+    background-color: hsl(186, 34%, 80%);
+}
+
+#totalSpent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#amount p {
+    margin-bottom: 0;
+    color: gray;
+}
+
+#amount h4 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: hsl(25, 47%, 15%);
+}
+
+#percentage {
+    text-align: right;
+    line-height: .5px;
+}
+
+.amount {
+    display: none;
+    background-color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    padding: .2rem 0;
+    border-radius: 2px;
+    color: white;
+}
+
+.amount.active {
+    display: block;
+}
+
+
+@media (max-width: 900px){
+    #container {
+        width: 90%;
+        
+    }
+
+    #amount h4 {
+        font-size: 2rem;
+    }
+
+    #amount p {
+        font-size: 1rem;
+    }
+}
+
